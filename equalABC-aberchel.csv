@@ -1,0 +1,16 @@
+EqualABCChecker,3
+q0,q1,q2,q_accept,q_reject
+a,b,c
+a,b,c,_,*
+q0
+q_accept
+q_reject
+q0,a,_,_,q0,a,a,_,R,R,S
+q0,b,_,_,q1,*,*,*,S,L,S
+q0,*,*,*,q_reject,*,*,*,S,S,S
+q1,b,*,_,q1,b,*,b,R,S,R
+q1,c,*,_,q2,*,*,*,S,S,L
+q1,*,*,*,q_reject,*,*,*,S,S,S
+q2,c,a,b,q2,*,*,*,R,L,L
+q2,_,_,_,q_accept,*,*,*,S,S,S
+q2,*,*,*,q_reject,*,*,*,S,S,S

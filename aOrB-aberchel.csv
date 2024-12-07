@@ -1,0 +1,13 @@
+AOrB,1
+q0,q_accept,q_reject,q_loop
+a,b
+a,b,_
+q0
+q_accept
+q_reject
+q0,a,q_accept,_,S
+q0,b,q_reject,_,S
+q0,*,q_loop,*,R
+q_loop,a,q_accept,_,S
+q_loop,b,q_reject,_,S
+q_loop,*,q_loop,*,R

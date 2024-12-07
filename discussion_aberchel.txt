@@ -1,0 +1,5 @@
+My code works by first parsing the csv file which represents a multitape turing machine, and then using the input string provided from the command line to determine if the machine accepts or rejects.
+The machine can also sometimes loop, and the user can input a termination flag after the input string to reject after 50 transitions.
+In order to test my program, the output logs accurately display what state the machine is currently in, and the current symbols on the tapes
+the test cases I used were the machines aOrb-aberchel.csv, palindrome-aberchel.csv, and equalABC-aberchel.csv. These have 1,2, and 3 tapes respectivly. They test all the parts of the program, including the wildcard.
+I have included logs of the programs running on different inputs to get different outputs.

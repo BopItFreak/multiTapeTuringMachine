@@ -1,0 +1,17 @@
+PalindromeChecker,2
+q0,q1,q2,q_accept,q_reject
+0,1
+0,1,_,*
+q0
+q_accept
+q_reject
+q0,0,_,q0,0,0,R,R
+q0,1,_,q0,1,1,R,R
+q0,_,_,q1,_,_,S,L
+q1,_,0,q1,_,0,S,L
+q1,_,1,q1,_,1,S,L
+q1,_,_,q2,_,_,L,R
+q2,0,0,q2,0,0,L,R
+q2,1,1,q2,1,1,L,R
+q2,_,_,q_accept,_,_,S,S
+q2,*,*,q_reject,*,*,S,S
